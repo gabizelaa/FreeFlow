@@ -1,22 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 @import url('dashboard.css');
 @import url('monitoramento.css');
 @import url('aside.css');
 
 
+
 * {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root {
+    /* Estados */
     --estadosInativos: #bbc3c9a8;
     --estadosSudeste: #4fa4b8;
     --estadosSul: #686f99;
+
+    /* Cores */
     --corCard: #14161D;
+    --background-color-aside: #14161D;
+    --background-color: #202537;
 }
 
 body {
+    background: var(--background-color);
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -25,7 +34,6 @@ body {
 }
 
 .mapa {
-    background-color: var(--corCard);
     padding: 1rem;
     width: 60%;
     border-radius: 1rem;
@@ -53,8 +61,8 @@ path {
 }
 
 .freeFlow:hover {
-    fill: purple;
-    stroke: red;
+    fill: rgba(52, 202, 60, 0.993);
+    stroke: rgb(0, 255, 55);
     stroke-width: 3px;
     transition: fill 0.4s;
 }
@@ -71,7 +79,7 @@ path {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #14161D;
+  background-color: var(--background-color);
   color: #FFF;
   border-radius: 1rem;
 }
