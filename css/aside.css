@@ -1,0 +1,12 @@
+aside {
+    color: white;
+    flex: 1;
+    background-color: var(--corCard);
+    max-width: fit-content;
+    padding: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
