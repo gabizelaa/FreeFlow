@@ -1,9 +1,15 @@
+:root{
+      /* Cores */
+    --background-color-aside: #14161D;
+    --background-color: #202537;
+}
+
 body{
     background: #eee;
    }
    
    #side_nav{
-    background: #14161D;
+    background: var(--background-color-aside);
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s;
@@ -22,7 +28,7 @@ body{
    }
    
    .sidebar li.active a, .sidebar a:hover {
-    color: #363636;
+    color: var(--background-color-aside);
    }
    .sidebar li a{
     color: #fff;
